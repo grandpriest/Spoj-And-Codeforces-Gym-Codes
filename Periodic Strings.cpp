@@ -6,18 +6,16 @@ ll Z[123456];
 int main()
 {
 	ll T;
-	
-	while(1)
+	cin>>T;
+	while(T--)
 	{
 		string str;
 		cin>>str;
-		if(str=="*")
-		break;
+		
 		ll L=0;
 		ll R=0;
 		ll i,j;
 		ll maxval=0;
-		ll pos=-1;
 		Z[0]=0;
 		for(i=1;i<str.size();i++)
 		{
@@ -39,10 +37,10 @@ int main()
 			if(Z[i]==str.size()-i && Z[i]%i==0)
 			maxval=max(maxval,Z[i]);
 		}
-		
-		cout<<maxval<<"<--max val"<<endl;	
 		maxval=str.size()-maxval;
-		printf("%lld\n",str.size()/maxval);
+		printf("%lld\n",maxval);
+		
+		if(T)printf("\n");
 	}
 	return 0;
 }
