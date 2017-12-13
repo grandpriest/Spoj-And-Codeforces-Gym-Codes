@@ -67,21 +67,6 @@ int main()
 				B[i][j]=B[i-1][j]+b[i][j];
 			}
 		}
-		
-		cout<<"B array::"<<endl;
-		for(i=1;i<=N;i++)
-		{
-			for(j=1;j<=M;j++)
-			cout<<B[i][j]<<" ";
-			cout<<endl;
-		}
-		cout<<"Y array::"<<endl;
-		for(i=1;i<=N;i++)
-		{
-			for(j=1;j<=M;j++)
-			cout<<Y[i][j]<<" ";
-			cout<<endl;
-		}
 		cout<<fun(1,0)<<endl;
 	}
 	return 0;
