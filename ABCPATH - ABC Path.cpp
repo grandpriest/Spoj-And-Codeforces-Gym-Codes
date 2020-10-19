@@ -8,7 +8,6 @@ ll dp[55][55];
 vector <pair<ll,ll> > start;
 ll fun(ll x,ll y)
 {
-	//cout<<x<<","<<y<<"<--pos now "<<arr[x][y]<<"<--ele now "<<endl;
 	if(dp[x][y]!=-1)
 	return dp[x][y];
 	ll temp=0;
